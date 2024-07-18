@@ -156,7 +156,7 @@ body {
 }
 
 /* Sidebar End*/
-
+/* middle Start */
 /* Story Start */
 
 .middle{
@@ -164,23 +164,24 @@ body {
     width: 700px;
     align-items: center;
     justify-content: flex-start;
+   
 }
 .story-section{
-   display: flex ;
+   display: flex;
    padding: 20px 40px;
    margin-top: 2rem;
    transition: all 0.3s;
 }
 .story { 
-    display: flex;
+      display: inline;
     flex-direction: column;
     align-items: center; 
-    justify-content: center;
+    justify-content: space-around;
    
  
 }
 .story p{
-    display: inline-block;
+    display: flexbox;
     font-size: 14px;
     font-weight: 500;
     color: #262626;
@@ -190,7 +191,7 @@ body {
     align-items: center;
     justify-content:center;
     font-weight: bold;
-    margin-left: 10px;
+  margin-left: 12px;
 
 }
 
@@ -237,3 +238,31 @@ body {
 
 
 /* Story End */
+
+/* Post Start */
+
+
+.post-section{
+position: static;
+    
+}
+
+
+/* middle End */
+
+
+/* footer Start */
+/* .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-top: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+
+/* footer End */
