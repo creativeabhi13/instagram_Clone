@@ -1,21 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/*  */
-/* *{
-
- 
+* {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
 }
 
-body{
-    background-color: #f5f5f5;
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #262626;
+    font-family: "BlinkMacSystemFont";
+    
+
+
+}
+/* sidebar start  */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 250px;
+    padding: 40px 10px 30px 10px;
+    background-color: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    transition: all, 0.3s;
 }
 
-.container{
-    max-width: 1349px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+
+.sidebar-header {
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.logo-img {
+    margin-left: 14px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logo-icon i {
+    display: none;
+    font-size: 28px;
+    height: 35px;
+    width: 51px;
+    text-align: center;
+}
+
+
+.sidebar>nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar button {
+    height: 60px;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.sidebar button>span {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+}
+
+/* .sidebar button:nth-child(7)>span {
+    padding: 6px;
 } */
+
+/* .sidebar button:nth-child(4)>span>span {
+    padding-left: 20px;
+} */
+
+/* .sidebar button:nth-child(7)>span>span {
+    padding: 12px;
+} */
+
+.sidebar button:hover > span {
+    background: #f2f2f2;
+}
+.sidebar button:hover > span:is(i,img) {
+    scale: 1.05;
+}
+
+.sidebar button > span >span {
+   padding-left: 18px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar button img {
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.sidebar button img {
+  transition: 0.2s;
+
+}
+
+.sidebar button img  {
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+
+.sidebar button img > em{
+   height: 10px;
+   width: 10px;
+   border-radius: 10px;
+   position: absolute;
+   right: -1px;
+   border: 1px solid #ffffff;
+   background: #ff2f40;
+
+}
+
+
+.sidebar > nav button:last-child{
+    margin-top: auto;
+}
+
+@media(width<580px){
+    .sidebar{
+        width: 72px;
+    }
+    .logo-img{
+        display: none;
+    }
+    .logo-icon i{
+        display: block;
+    }
+
+    .sidebar button >span{
+        width: 50px;
+    }
+    .sidebar button >span >span{
+        opacity:0 ;
+        visibility: hidden;
+    }
+}
+
+/* Sidebar End*/
